@@ -20,10 +20,7 @@ namespace SwagLabsTest.StepDefinitions
         {
             
             Console.WriteLine("Test Scenario Started...");
-            GWD.startDriver();
-            GWD.driver.Navigate().GoToUrl("https://www.saucedemo.com/");
-            GWD.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-            GWD.driver.Manage().Window.Maximize();
+
 
         }
 

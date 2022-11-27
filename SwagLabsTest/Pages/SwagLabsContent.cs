@@ -4,6 +4,7 @@ using SwagLabsTest.HelperMethods;
 using GWD = SwagLabsTest.Support.GWD;
 using SeleniumExtras.PageObjects;
 using OpenQA.Selenium.Support.UI;
+using TechTalk.SpecFlow;
 
 namespace SwagLabsTest.Pages
 {
@@ -111,6 +112,15 @@ namespace SwagLabsTest.Pages
         {
             public string ButtonName { get; set; }
 
+        }
+
+        [Given(@"Navigate To basqar")]
+        public void GivenNavigateToBasqar()
+        {
+            GWD.startDriver();
+            GWD.driver.Navigate().GoToUrl("https://www.saucedemo.com/");
+            GWD.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            GWD.driver.Manage().Window.Maximize();
         }
 
 

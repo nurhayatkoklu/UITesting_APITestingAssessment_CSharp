@@ -11,6 +11,12 @@ namespace SwagLabsTest.StepDefinitions
     {
         SwagLabsContent slc = new SwagLabsContent();
 
+        [Given(@"Navigate To basqar")]
+        public void GivenNavigateToBasqar()
+        {
+            slc.GivenNavigateToBasqar();
+        }
+
         [When(@"Enter valid username and password and click login button")]
         public void WhenEnterValidUsernameAndPasswordAndClickLoginButton()
         {
@@ -77,6 +83,22 @@ namespace SwagLabsTest.StepDefinitions
         public void ThenVerifyEmptyUsernameWarning()
         {
             slc.findAndContainsText("emptyWarning", "is required");
+        }
+
+        [When(@"Do not enter any username and enter a valid password and click login button")]
+        public void WhenDoNotEnterAnyUsernameAndEnterAValidPasswordAndClickLoginButton()
+        {
+            slc.sendKeys("username", "");
+            slc.sendKeys("password", "secret_sauce");
+            slc.findAndClick("loginBtn");
+        }
+
+        [When(@"Enter a valid username and do not enter password and click login button")]
+        public void WhenEnterAValidUsernameAndDoNotEnterPasswordAndClickLoginButton()
+        {
+            slc.sendKeys("username", "standard_user");
+            slc.sendKeys("password", "");
+            slc.findAndClick("loginBtn");
         }
 
     }
