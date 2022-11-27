@@ -1,6 +1,7 @@
 ﻿Feature: Discover what is wrong with the problem_user
 
 Scenario Outline: Login with problem_user username
+    Given Navigate To basqar
 	When Confirm you are on the login page
 	And Enter "<Username>" and password and click login button
 	Then User should login successfully

@@ -21,9 +21,8 @@ namespace SwagLabsTest.StepDefinitions
             
             Console.WriteLine("Test Scenario Started...");
 
-
         }
-
+      
 
         [AfterScenario]
         public void AfterScenario()
@@ -31,5 +30,6 @@ namespace SwagLabsTest.StepDefinitions
             Console.WriteLine("Test Scenario Ended Successfully...");
             GWD.QuitDriver();
         }
+
     }
 }

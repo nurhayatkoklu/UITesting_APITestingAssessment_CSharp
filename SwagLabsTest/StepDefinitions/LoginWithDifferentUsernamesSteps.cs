@@ -28,7 +28,7 @@ namespace SwagLabsTest.StepDefinitions
         [When(@"Enter locked_user username and password and click login button")]
         public void WhenEnterLocked_UserUsernameAndPasswordAndClickLoginButton()
         {
-            slc.sendKeys("username", "locked_user");
+            slc.sendKeys("username", "locked_out_user");
             slc.sendKeys("password", "secret_sauce");
             slc.findAndClick("loginBtn");
         }

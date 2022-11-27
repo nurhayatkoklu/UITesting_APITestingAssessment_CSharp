@@ -1,6 +1,7 @@
 ﻿Feature: Remove Product Test with standard_user
 
-Background:Login Functionality with valid username and password
+Background: Login Functionality with valid username and password
+	Given Navigate To basqar
 	When Confirm you are on the login page
 	And Enter valid username and password and click login button
 	Then User should login successfully

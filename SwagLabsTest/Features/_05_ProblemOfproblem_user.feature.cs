@@ -96,12 +96,15 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 4
- testRunner.When("Confirm you are on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.Given("Navigate To basqar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
- testRunner.And(string.Format("Enter \"{0}\" and password and click login button", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("Confirm you are on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 6
+ testRunner.And(string.Format("Enter \"{0}\" and password and click login button", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 7
  testRunner.Then("User should login successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
@@ -114,23 +117,23 @@ this.ScenarioInitialize(scenarioInfo);
                             "Cart"});
                 table5.AddRow(new string[] {
                             "CheckOut"});
-#line 7
+#line 8
  testRunner.Given("Click below buttons", ((string)(null)), table5, "Given ");
 #line hidden
-#line 14
+#line 15
 testRunner.When(string.Format("Fill the form with \"{0}\", \"{1}\" and \"{2}\"", firstName, lastName, zipcode), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                             "ButtonName"});
                 table6.AddRow(new string[] {
                             "Continue"});
-#line 16
+#line 17
 testRunner.And("Click below buttons", ((string)(null)), table6, "And ");
 #line hidden
-#line 21
+#line 22
 testRunner.When("Take the screenshot if user is able to fill the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 23
+#line 24
 testRunner.Then("Verify the problem of problem_user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

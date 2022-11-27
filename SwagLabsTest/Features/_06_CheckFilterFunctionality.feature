@@ -1,9 +1,11 @@
 ﻿Feature: Filter Functionality Test
 
-Background:Login Functionality with valid username and password
+Background: Login Functionality with valid username and password
+	Given Navigate To basqar
 	When Confirm you are on the login page
 	And Enter valid username and password and click login button
 	Then User should login successfully
+
 
 Scenario:  Check if the Filter functioanility is working correctly
 When Select NameAToZ
