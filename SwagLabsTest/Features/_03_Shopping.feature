@@ -6,6 +6,7 @@ Background: Login Functionality with valid username and password
 	And Enter valid username and password and click login button
 	Then User should login successfully
 
+@Try
 Scenario Outline:  Add Product To The Cart
 Given Click below buttons
 
