@@ -45,7 +45,7 @@
     <Folder Include="ExtentReport\" />
     <Folder Include="TestPlan\" />
     <Folder Include="TestCases\" />
-    <Folder Include="ScreenShot\" />
+    <Folder Include="ScreenShots\" />
   </ItemGroup>
 
 </Project>
