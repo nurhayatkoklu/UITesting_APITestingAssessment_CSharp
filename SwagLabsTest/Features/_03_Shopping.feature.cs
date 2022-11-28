@@ -93,24 +93,17 @@ namespace SwagLabsTest.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add Product To The Cart")]
-        [NUnit.Framework.CategoryAttribute("Try")]
         [NUnit.Framework.TestCaseAttribute("John", "Smith", "555", null)]
         [NUnit.Framework.TestCaseAttribute("Maria", "Johnson", "444", null)]
         public void AddProductToTheCart(string firstName, string lastName, string zipcode, string[] exampleTags)
         {
-            string[] @__tags = new string[] {
-                    "Try"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
+            string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("FirstName", firstName);
             argumentsOfScenario.Add("LastName", lastName);
             argumentsOfScenario.Add("Zipcode", zipcode);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Product To The Cart", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 10
+#line 9
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -133,33 +126,33 @@ this.FeatureBackground();
                             "Cart"});
                 table1.AddRow(new string[] {
                             "CheckOut"});
-#line 11
+#line 10
 testRunner.Given("Click below buttons", ((string)(null)), table1, "Given ");
 #line hidden
-#line 19
+#line 18
 testRunner.When(string.Format("Fill the form with \"{0}\", \"{1}\" and \"{2}\"", firstName, lastName, zipcode), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "ButtonName"});
                 table2.AddRow(new string[] {
                             "Continue"});
-#line 21
+#line 20
 testRunner.And("Click below buttons", ((string)(null)), table2, "And ");
 #line hidden
-#line 26
+#line 25
 testRunner.When("Take the screenshot of payment information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 28
+#line 27
 testRunner.And("Verify total payment amount is correct", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "ButtonName"});
                 table3.AddRow(new string[] {
                             "Finish"});
-#line 30
+#line 29
 testRunner.And("Click below buttons", ((string)(null)), table3, "And ");
 #line hidden
-#line 35
+#line 34
 testRunner.Then("Confirm order is dispatched", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

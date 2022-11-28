@@ -32,7 +32,7 @@ Scenario: Login Functionality with empty username and valid password
 	And Do not enter any username and enter a valid password and click login button
 	Then User cannot be login successfully
 
-	Scenario: Login Functionality with valid username and empty password
+Scenario: Login Functionality with valid username and empty password
 	Given Navigate To basqar
 	When Confirm you are on the login page
 	And Enter a valid username and do not enter password and click login button
